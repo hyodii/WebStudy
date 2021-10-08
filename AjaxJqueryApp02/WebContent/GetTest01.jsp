@@ -1,8 +1,8 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%
-	request.setCharacterEncoding("UTF-8");
-	String cp = request.getContextPath();
+   request.setCharacterEncoding("UTF-8");
+   String cp = request.getContextPath();
 %>
 <!DOCTYPE html>
 <html>
@@ -11,51 +11,51 @@
 <title>GetTest01.jsp</title>
 <link rel="stylesheet" type="text/css" href="<%=cp%>/css/main.css">
 <style type="text/css">
-	.txtNum
-	{
-		width: 100px;
-		text-align: right;
-	}
-	#result
-	{
-		color: red;
-		font-weight: bold;
-	}
+   .txtNum
+   {
+      width: 100px;
+      text-align: right;
+   }
+   #result
+   {
+      color: red;
+      font-weight: bold;
+   }
 </style>
 <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
 <script type="text/javascript">
 
-	// ○ 『$.get(url, data, callBack)』
-	//     - 매개변수로 전달받은 URL 을 사용하여 서버에 대한 GET 요청을 전송한다.
-	
-	$(function()
-	{
-		$("#sendButton").click(function()
-		{
-			//alert("호출 확인");
-			
-			var su1 = $("#su1").val();
-			var su2 = $("#su2").val();
-			var oper = $("#oper").val();
-			
-			// check~!!!
-			$.get("GetTest01_ok.jsp"
-			, {
-				su1: su1
-				, su2: su2
-				, oper: oper}
-			, function(args)	// data로 들어간것 
-			{
-				$("#result").html(args)
-			});
-			//-- data → { 이름 : 값, 이름 : 값, ... }
-			
-			//$.get("GetTest01_ok.jsp", {su1:su1}, function(args){$("result").html(args)})
-			//$.get("요청URL", {이름:값}, function(넘겨받은값){$("선택자").html(넘겨받은값)})
-			
-		});
-	});
+   // ○ 『$.get(url, data, callBack)』
+   //     - 매개변수로 전달받은 URL 을 사용하여 서버에 대한 GET 요청을 전송한다.
+   
+   $(function()
+   {
+      $("#sendButton").click(function()
+      {
+         //alert("호출 확인");
+         
+         var su1 = $("#su1").val();
+         var su2 = $("#su2").val();
+         var oper = $("#oper").val();
+         
+         // check~!!!
+         $.get("GetTest01_ok.jsp"
+         , {
+            su1: su1
+            , su2: su2
+            , oper: oper}
+         , function(args)   // data로 들어간것 
+         {
+            $("#result").html(args)
+         });
+         //-- data → { 이름 : 값, 이름 : 값, ... }
+         
+         //$.get("GetTest01_ok.jsp", {su1:su1}, function(args){$("result").html(args)})
+         //$.get("요청URL", {이름:값}, function(넘겨받은값){$("선택자").html(넘겨받은값)})
+         
+      });
+   });
 
 
 </script>
@@ -64,24 +64,24 @@
 <body>
 
 <div>
-	<h1>jQuery의 get() 활용 실습</h1>
-	<hr />
+   <h1>jQuery의 get() 활용 실습</h1>
+   <hr />
 </div>
 
 <div>
-	<input type="text" id="su1" class="txt txtNum"/>
-	
-	<select id="oper">
-		<option value="add">덧셈</option>
-		<option value="sub">뺄셈</option>
-		<option value="mul">곱셈</option>
-		<option value="div">나눗셈</option>
-	</select>
-	
-	<input type="text" id="su2" class="txt txtNum" />
-	
-	<input type="button" value=" = "  id="sendButton" class="btn"/>
-	
+   <input type="text" id="su1" class="txt txtNum"/>
+   
+   <select id="oper">
+      <option value="add">덧셈</option>
+      <option value="sub">뺄셈</option>
+      <option value="mul">곱셈</option>
+      <option value="div">나눗셈</option>
+   </select>
+   
+   <input type="text" id="su2" class="txt txtNum" />
+   
+   <input type="button" value=" = "  id="sendButton" class="btn"/>
+   
 </div>
 <br>
 
@@ -91,13 +91,13 @@
 <br>
 
 <div>
-	<input type="radio" name="rdo"/>rd1
-	<input type="radio" name="rdo"/>rd2
+   <input type="radio" name="rdo"/>rd1
+   <input type="radio" name="rdo"/>rd2
 </div>
 <br>
 
 <div>
-	<input type="text" />
+   <input type="text" />
 </div>
 
 
