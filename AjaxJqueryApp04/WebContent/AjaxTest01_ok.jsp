@@ -7,21 +7,19 @@
 <%
 	// AjaxTest01_ok.jsp
 	
-	// data구성에 파람 수신한 것!
-	/* 
+	/*
 	String name = request.getParameter("name");
 	String content = request.getParameter("content");
 	*/
-	
 %>
-<%-- 
+<%--
 이름 : <b><%=name %></b>
 <br>
 내용 : <b><%=content %></b>
-<br> 
---%>
-
+<br>
+ --%>
+ 
 이름 : <b>${param.name }</b>
 <br>
 내용 : <b>${param.content }</b>
-
+<br>

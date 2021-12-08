@@ -5,7 +5,7 @@
 	String cp = request.getContextPath();
 %>
 <%
-	// GetTest03_ok.jsp
+	// GetTest01_ok.jsp
 	
 	int su1 = Integer.parseInt(request.getParameter("su1"));
 	int su2 = Integer.parseInt(request.getParameter("su2"));
@@ -14,13 +14,13 @@
 	String result = "";
 	
 	if(oper.equals("add"))
-		result = String.format("%d + %d = %d", su1, su2, (su1+su2));
+		result = String.format("%d + %d = %d", su1, su1, (su1+su2));
 	else if(oper.equals("sub"))
-		result = String.format("%d - %d = %d", su1, su2, (su1-su2));
+		result = String.format("%d - %d = %d", su1, su1, (su1-su2));
 	else if(oper.equals("mul"))
-		result = String.format("%d * %d = %d", su1, su2, (su1*su2));
+		result = String.format("%d * %d = %d", su1, su1, (su1*su2));
 	else if(oper.equals("div"))
-		result = String.format("%d / %d = %.2f", su1, su2, ((double)su1/su2));
+		result = String.format("%d / %d = %.2f", su1, su1, ((double)su1/su2));
 	
 %>
 <%=result%>

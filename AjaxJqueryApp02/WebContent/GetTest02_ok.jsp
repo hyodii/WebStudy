@@ -7,9 +7,9 @@
 <%
 	// GetTest02_ok.jsp
 	
-	//String nickName = request.getParameter("nickName");
+	String nickName = request.getParameter("nickName");
 %>
-<%-- <%=nickName %>님 안녕하세요. --%>
-${param.nickName}님 안녕하세요.
+<%-- <%=nickName%>님 안녕하세요.<br> --%>
+${param.nickName }님 안녕하세요.
 <br>
-반갑~반갑~반갑습니다~
+반갑습니다.
