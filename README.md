@@ -344,8 +344,18 @@ http://localhost:8090/WebApp28/hello
 - AjaxTest03.jsp   (xml control 연습)
 - AjaxTest03_ok.jsp
 
-<br>
 
 ### Json (JsonApp)
+<<<<<<< HEAD
 - 
 >>>>>>> origin/main
+=======
+- JsonTest01.html ~ JsonTest10.html
+
+
+### jQuery의 ajax() 활용 실습 (AjaxJqueryApp05)
+- JsonTest01.jsp (json control) / JsonTest01_ok.jsp
+- JsonTest02.jsp  (배열로 컨트롤) / JsonTest02_ok.jsp
+
+
+>>>>>>> c9fb87253808ddba7945f7309f383fe4e1bef528

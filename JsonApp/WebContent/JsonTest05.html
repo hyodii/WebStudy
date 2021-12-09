@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,4 +35,42 @@
 	<!-- Method Test : bumsuk -->
 </form>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JsonTest05.html</title>
+<script type="text/javascript">
+
+	var myJsonObject5 =
+	{
+			"test" : function(args)
+			{
+				alert("Method Test : " + args);
+			}
+	}
+	
+	var t = myJsonObject5.test;
+	/* var t = myJsonObject.test(args); 이렇게 이해 */
+	
+</script>
+</head>
+<body>
+
+<form>
+	<input type="button" value="click1" onclick="t('bumsuk')">
+	<!-- → Method Test : bumsuk -->
+	
+	<input type="button" value="click2"
+		onclick="eval('var a=' + myJsonObject5.test); a('bumsuk')">
+	<!-- Method Test : bumsuk -->
+	
+	<input type="button" value="click3"
+		onclick="eval('(' + myJsonObject5.test + ')(\'bumsuk\')')">
+	<!-- myJsonObject5.test('bumsuk') -->
+	<!-- Method Test : bumsuk -->
+</form>
+</body>
+>>>>>>> c9fb87253808ddba7945f7309f383fe4e1bef528
 </html>
