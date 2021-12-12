@@ -373,14 +373,16 @@
 
 ### Json (JsonApp)
 
-<<<<<<< HEAD
-
-- > > > > > > > # origin/main
 - JsonTest01.html ~ JsonTest10.html
 
 ### jQuery의 ajax() 활용 실습 (AjaxJqueryApp05)
 
-- JsonTest01.jsp (json control) / JsonTest01_ok.jsp
-- JsonTest02.jsp (배열로 컨트롤) / JsonTest02_ok.jsp
+- JsonTest01.jsp (json control)
+- JsonTest01_ok.jsp
+- JsonTest02.jsp  (배열로 컨트롤)
+- JsonTest02_ok.jsp
 
-> > > > > > > c9fb87253808ddba7945f7309f383fe4e1bef528
+### jQuery의 ajax() 활용 실습 (AjaxJqueryApp06) → 로딩 관련
+- LoadingTest.jsp
+- LoadingTest_ok.jsp
+
