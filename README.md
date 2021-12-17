@@ -377,5 +377,17 @@
 
 ### jQuery의 ajax() 활용 실습 (AjaxJqueryApp05)
 
+<<<<<<< HEAD
 - JsonTest01.jsp (json control) / JsonTest01_ok.jsp
 - JsonTest02.jsp (배열로 컨트롤) / JsonTest02_ok.jsp
+=======
+- JsonTest01.jsp (json control)
+- JsonTest01_ok.jsp
+- JsonTest02.jsp  (배열로 컨트롤)
+- JsonTest02_ok.jsp
+
+### jQuery의 ajax() 활용 실습 (AjaxJqueryApp06) → 로딩 관련
+- LoadingTest.jsp
+- LoadingTest_ok.jsp
+
+>>>>>>> 8eb28b7b2fd9ae1b83005e69ec027839f5d7b31b
